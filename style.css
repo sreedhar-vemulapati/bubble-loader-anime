@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    height: 100vh;
+}
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translate(-50%,-50%);
+    border: 15px dotted rgba(211, 211, 211, 0);
+    border-radius: 50%;
+    border-top: 15px dotted rgb(232, 7, 232);
+    border-right: 15px dotted rgb(232, 7, 232);
+    animation: loader 2s linear infinite;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(232, 7, 232);
+}
+@keyframes loader {
+    0%{ transform: translate(-50%,-50%) rotate(0);}
+    100%{ transform: translate(-50%,-50%) rotate(360deg);opacity: 1;}
+    
+}
